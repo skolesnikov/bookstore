@@ -1,8 +1,7 @@
 <h1>Books</h1>
-<p>Available as of 9/4/2014</p>
-<ol>
-<li>Atlas Shrugged</li>
-<li>Ender's Game</li>
-<li>Hamlet</li>
-<li>The Hobbit</li>
-</ol>
+<p>Available as of <%= formatted_time(@available_at) %></p>
+<ul>
+<% @books.each do |book| %>
+	<li><%= link_to(book.title, book) %> by <%= book.author %></li>
+<% end %>
+</ul>
