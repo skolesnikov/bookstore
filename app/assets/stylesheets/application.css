@@ -11,3 +11,16 @@
  *= require_self
  *= require_tree .
  */
+
+ <style type="text/css">
+	dt {
+	  float: left;
+	  clear: left;
+	  margin-right: 5px;
+	  font-weight: bold;
+	}
+
+	dd {
+	  margin-left: 0px;
+	}
+</style>

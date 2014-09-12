@@ -1,7 +1,8 @@
-<h1>Books</h1>
+<h1><%= Book.count %> Books</h1>
 <p>Available as of <%= formatted_time(@available_at) %></p>
 <ul>
 <% @books.each do |book| %>
 	<li><%= link_to(book.title, book) %> by <%= book.author %></li>
 <% end %>
 </ul>
+<p><%= link_to 'Add New Book', new_book_path %></p>

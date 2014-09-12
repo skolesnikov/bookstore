@@ -1,0 +1,19 @@
+<%= form_for(@book) do |f| %>
+<dl>
+	<dt><%= f.label :title %>:</dt>	
+	<dd><%= f.text_field :title, autofocus: true %></dd>
+
+	<dt><%= f.label :author %>:</dt>
+	<dd><%= f.text_field :author %></dd>
+
+	<dt><%= f.label :pages %>:</dt>
+	<dd><%= f.text_field :pages %></dd>
+
+	<dt><%= f.label :price %>:</dt>
+	<dd><%= f.text_field :price %></dd>
+
+	<p>
+		<%= f.submit %> 
+		<%= link_to "<button>Cancel</button>".html_safe, books_path %>
+	</p>
+<% end %>
