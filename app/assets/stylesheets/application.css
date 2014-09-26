@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require_tree .
+ *= require 'bootstrap'
  */
 
  <style type="text/css">
